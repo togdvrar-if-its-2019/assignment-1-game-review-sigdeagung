@@ -21,16 +21,6 @@ In the world of Slay The Spire, you're given 3 character choice with unique play
 
 After choosing a character and difficulty. The player suddenly wakes up in the very bottom of the spire, with seemingly endless level. Your objective now is to struggle to go up to the highest level of the spire. 
 
-![](images/game_map.jpg)
-
-Player can advance to higher floor after finish task within the floor which is :
-- **Enemy** Player finished killing all the enemy(ies)
-- **Elite** Player finished killing elite enemy(ies)
-- **Merchant** Player finished shopping and leave the shop
-- **Treasure** Player opened the treasure box
-- **Rest** Player finished either rest or upgrading a card
-- **Boss** Player finished killing the boss
-- **Unknown** Can contain any of the above
 
 If the player can keep ascending floor by floor without dying until reaching the highest floor which contains the heart of the spire, the source of all evil. After you dealt certain damage to the heart, suddenly your consciousness fades and fainted.
 ![](images/game_heart.jpg)
@@ -76,8 +66,11 @@ If the player can keep ascending floor by floor without dying until reaching the
 
 ![](images/game_potion.jpg)
 - Gold
+
+![](images/game_gold.png)
 - Energy
 
+![](images/game_energy.png)
 ### Goal
 
 Survive until the highest level and deal damage to the heart of the spire
@@ -93,7 +86,7 @@ Survive until the highest level and deal damage to the heart of the spire
 - Cards in the discard pile will be shuffled into draw pile when it run out of cards.
 - Player have a number of energy which can be used to perform card.
 - Player can end turn at any time in the game, letting the enemy to perform.
-- Artifact will always activated, depends on the effect and conditions.
+- Relic will always activated, depends on the effect and conditions.
 - At any point of the game, player can choose to use a potion to gain it's effects.
 - After killing the enemy, player gains loot
 
@@ -113,10 +106,20 @@ Survive until the highest level and deal damage to the heart of the spire
 
 
 ### Plot
-The player wakes up on the first floor on the spire. Then the player tries to reach the highest floor on the spire. On the highest level of the spire there's the heart of the spire, player deal some damage then fainted.
+The player wakes up on the first floor on the spire. Then the player tries to reach the highest floor on the spire. On the highest level of the spire there's the heart of the spire, player deal some damage then fainted. After waking up, player realized he's on the first floor of the spire again, and lost all his golds, potions, cards, and relics.
 
 ### Objectives
-Kill your way through the tower and arrive at the heart of the spire.
+
+![](images/game_map.jpg)
+
+Player can advance to higher floor after finish task within the floor which is :
+- **Enemy** Player finished killing all the enemy(ies)
+- **Elite** Player finished killing elite enemy(ies)
+- **Merchant** Player finished shopping and leave the shop
+- **Treasure** Player opened the treasure box
+- **Rest** Player finished either rest or upgrading a card
+- **Boss** Player finished killing the boss
+- **Unknown** Can contain any of the above
 
 ### Challenges
 
