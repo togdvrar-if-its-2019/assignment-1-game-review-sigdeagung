@@ -1,209 +1,149 @@
-[//]: # (Slay The Spire readme)
+[//]: # (Paper Review  readme)
 
-# Game Review
+# Paper Review
 #### Topics on Game Development VR/AR
 
-![Game Cover](images/main_header.jpg)
-
-## About Slay The Spire
-
-Slay the Spire is a single player, deck building rogue-lite video game developed by American studio MegaCrit and published by Humble Bundle. The game was first released in early access for Microsoft Windows, macOS, and Linux in late 2017, with an official release in January 2019. It will also be released for the Nintendo Switch later in 2019. 
-
-## Basic Component
-
-### Game Space
-
-In the world of Slay The Spire, you're given 3 character choice with unique playstyle and set of cards to climb the spire in order to reach the heart of the spire and **slay** it.
-
-![](images/char_ironclad.jpg)
-![](images/char_silent.jpg)
-![](images/char_defect.jpg)
-
-After choosing a character and difficulty. The player suddenly wakes up in the very bottom of the spire, with seemingly endless level. Your objective now is to struggle to go up to the highest level of the spire. 
+![Game Cover](images/header.png)
 
 
-If the player can keep ascending floor by floor without dying until reaching the highest floor which contains the heart of the spire, the source of all evil. After you dealt certain damage to the heart, suddenly your consciousness fades and fainted.
-![](images/game_heart.jpg)
+This paper published at december 2018, I found it on SIGCHI (Special Interest Group on Computer-Human Interaction) 
 
-### Boundaries
+## Paper Contents
 
-- In the game player can only ascend to the next floor, unable to descend to lower floor.
-- If player died not only he needs to restart from floor 1 he also lost all the cards and artfacts obtained from previous run.
+### Intro
 
+The act of giving a present can have a positive impact on the giver's mental well-being. This paper trying to find out if giving a present to video games non playable character (NPC) could give the same impact.
 
-### Rule of Interaction
-- In order to defeat enemy, player uses a set of cards containing action which could be performed.
-- If player hp become 0, player will die.
-- If enemy hp become 0, enemy will die.
-- Relic passively activated depends on the conditions
-- Potion can be used to gain various results
-
-### Artifacts 
-
-- Player
-
-![](images/game_char.jpg)
-- Enemy
-
-![](images/game_enemies.jpg)
-
-- Elite
-
-![](images/game_elite.jpg)
-
-- Boss
-
-![](images/game_boss.jpg)
-
-- Card
-
-![](images/game_cards.jpg)
-
-- Relic
-
-![](images/game_relic.jpg)
-- Potion
-
-![](images/game_potion.jpg)
-- Gold
-
-![](images/game_gold.png)
-- Energy
-
-![](images/game_energy.png)
-### Goal
-
-Survive until the highest level and deal damage to the heart of the spire
-
-## Gameplay 
-
-### Game Rules
-#### Fighting
-![](images/game_play.jpg)
-
-- In the start of player turn, player receives number of cards.
-- After card used, the card will be placed on the discard pile
-- Cards in the discard pile will be shuffled into draw pile when it run out of cards.
-- Player have a number of energy which can be used to perform card.
-- Player can end turn at any time in the game, letting the enemy to perform.
-- Relic will always activated, depends on the effect and conditions.
-- At any point of the game, player can choose to use a potion to gain it's effects.
-- After killing the enemy, player gains loot
-
-![](images/game_loot.jpg)
-![](images/game_choosecard.jpg)
-
-#### Non-Fighting
-
-- In the tent area, player can either rest or upgrade card
-
-![](images/game_rest.jpg)
-![](images/game_upgrade.jpg)
-
-- In the merchant area, player spend gold to buy card, potion, and relic
-
-![](images/game_shop.jpg)
+![Game Cover](images/intro_givepresent.png)
 
 
-### Plot
-The player wakes up on the first floor on the spire. Then the player tries to reach the highest floor on the spire. On the highest level of the spire there's the heart of the spire, player deal some damage then fainted. After waking up, player realized he's on the first floor of the spire again, and lost all his golds, potions, cards, and relics.
+Gifting has been described as involving 3 stages :
 
-### Objectives
+- **Gestation** the entire process of gift transforming from a conceptual idea to the material item
+- **Prestation** the actual gift exchange
+- **Reformulation** repositioning of the relationship between the giver and recipient
 
-![](images/game_map.jpg)
+There are 4 core element of gifting :
 
-Player can advance to higher floor after finish task within the floor which is :
-- **Enemy** Player finished killing all the enemy(ies)
-- **Elite** Player finished killing elite enemy(ies)
-- **Merchant** Player finished shopping and leave the shop
-- **Treasure** Player opened the treasure box
-- **Rest** Player finished either rest or upgrading a card
-- **Boss** Player finished killing the boss
-- **Unknown** Can contain any of the above
+- **Giver**
+- **Recipient**
+- **Occasion**
+- **Gift**
 
-### Challenges
+The interaction between them withint he gift-giving process that forms the uniqueness of a particular gift exchange.
 
-After you reach the heart of spire, you unlock the next ascension level. The  higher the ascension level, the bigger damage you can deal to the heart.
+**Why does gifting make people feel good?**
+the act of giving enables the giver to feel more effective, valuable and generous.
 
-![](images/game_ascension.jpg)
-## Game Mechanics
-- Status
-    - **HP**     
-    HP represents the health of the player and the opponents they encounter. Certain effects can reduce or increase the remaining and/or maximum HP of the player. HP persists throughout each Act of the game. After successfully defeating the Boss of an Act the player is fully healed. Once the remaining HP of the player reach 0 they die and the game is over.
+Kindness and generousity can benefit happiness in many ways:
+- First, people who give may develop their self-image as altruistic, empathic, socially responsible, agreeable, or influential, therefore, they feel more confident, effective, in control, and optimistic about their ability to help  
+- Second, giving may generate a positive mood, ease guilt, reduce aversive arousal, or to fulfil a desire to show gratitude.
+- Third, giving can satisfy human’s basic need for relatedness , contribute to peer acceptance as well as receiving appreciation, gratitude, and prosocial reciprocity(*mutual benefit*). Also increase senses of cooperation and interdependence.
 
-    - **Damage**     
-    Attacks deal damage. Unblocked damage results in loss of HP.
-    
-    - **Block**     
-    Block applies shields to any combatant for one turn of combat. The intensity of the shields determines how much damage it can take before breaking. Whenever a blocking target receives damage the shields are reduced first. Once an attack exceeds the shield intensity it breaks and the target starts taking HP damage. Unless prevented by other means all applications of Block are removed at the start of each turn in combat.
-    
-- Combat Conditions
-    - **Weakened**    
-         This unit deals 25% less damage with attacks
-    - **Vulnerable**    
-         This unit receives 50% more damage from attacks
-    - **Strengh**    
-         This unit deals X additional damage with attacks
-    - **Artifact**    
-         Negates X incoming debuffs 	Intensity 	
-    - **Thorns**    
-         Deals X damage to any attacker 	Intensity 
-    - **Barricade**    
-         Prevents removal of Block at the start of turn 	
-    - **Metallicise**    
-         This unit gains X Block at the end of their turn 	
-    - **PlatedArmor**    
-         This unit gains X Block at the end of their turn, taking unblocked damage removes one
-    - **Intangible**    
-         All incoming damage and life loss is reduced to 1 
-    - **Frail**    
-         This unit applies 25% less block with 
-    - **Dexterity**    
-         This unit applies X additinoal block with cards
-    - **Entangled**    
-         This unit cannot play Attack cards 	Duration
-    - **Flex**    
-         This unit loses X strength at the end of turn
-    - **Blur**    
-         Block is not removed at the beginning of the next X turns 
-    - **DrawReduction**    
-         Draw 1 less card at the start of the next X turns
-    - **Minion**    
-         This unit abandons combat if only minions remain 
-    - **Posion**    
-         This unit loses X HP at the start of each turn and then removes 1 application of poison
-    - **Shackled**    
-    This unit regains X Strength at the end of turn 
+> Altruism is the principle and moral practice of concern for happiness of other human beings and/or animals, resulting in a quality of life both material and spiritual
 
-- Card Types
-        
-    - **Attack**   
-    Usually deal direct damage to one or more enemies, with some adding a secondary effect. 
+> Empathic means showing an ability to understand and share the feelings of another.
 
-    - **Skill**   
-    All sorts of temporary and strategic effects are in this card type. Commonly grant Block or other temporary buffs to the player or debuffs to one or more enemies. 
+> In psychology, aversives are unpleasant stimuli that induce changes in behavior through punishment; by applying an aversive immediately following a behavior, the likelihood of the behavior occurring in the future is reduced.
 
-    - **Power**   
-    A permanent upgrade for the entire combat encounter. Some Powers give flat stats like Strength or Dexterity, others require certain conditions to be met or add beneficial effects whenever a certain event occurs in battle. Once played, the Power card is removed for that combat. 
+### Game Design
 
-    - **Status**   
-    Unplayable cards added to the deck during combat encounters. They are designed to bloat the deck and prevent the player from drawing beneficial cards, with some of them having additional negative effects. Unlike Curses, Status cards are removed from the deck at the end of combat. 
+In Author's design They intended players to: 
+- Be aware of their selfimage.
+- Be emotionally engaged. 
+- Have a sense of social presence in the game 
+- Have an awareness of the effective value of the gift. 
 
-    - **Curse**   
-    Unplayable cards added to the deck during in-game events. Similar to status cards they are designed to bloat the deck and prevent the player from drawing beneficial cards, with some of them having additional negative effects during combat. Unlike Statuses, Curse cards persist in the players' deck until removed by other means
+Author have created a game world where players are members of a social group and build social relationships with NPCs. When a gifting opportunity arises, players could gift to the NPCs without the expectation of a return or assuming a return which is unspecified during prestation. In addition, we aimed to make players understand time and money inside the game world, thus providing a context for analysing their decisions on gifts and the psychological outcomes of the gifting event.
 
-- Card Effects
+Author designed a business simulation game with role-playing elements. They made a prototype (the Fairy game) capturing some original ideas which was useful as a foundation for comparison and iteratively develop another prototype (the Resident game). 
+- Fairy version: Players do tasks e.g. watering and sell products with negotiated prices. A neighbour fairy cooperates with the players during the tasks and crisis. Gift-occasion is a thank-you gesture to the fairy’s help. Resident version: Players plan production and development and sell products with fixed prices. 
+- A neighbour resident (‘Daniel’) who either gives the players bonus tokens or (‘Betty’) who talks about what happened. The gift-occasion is the resident’s birthday. 
 
-    - **Unplayable**    
-      Cards that cannot be played normally, unless otherwise altered, and hence have no Energy cost.
-    - **Exhaust**    
-      Cards that are exhausted are removed from the players' deck until the end of the encounter.
-    - **Ethereal**    
-     Cards that exhaust themselves if left in the players' hand at end of turn. 
-    - **Innate**    
-     Cards that are innate are guaranteed to be in the players' starting hand.
-    - **Retain**    
-     Cards that are kept after ending your turn
+The gifting process is similar in both games; players are free to gift or not and to choose a gift, a packaging and a way of delivery
 
 
-    
+Author invited 12 participants to playtest the game individually at different stages of development. The concept evaluated is consistent. Each participant played the two prototypes and was interviewed about their gaming experience and invited to compare the different design. The research purpose and the design objectives of the game were not revealed until a late stage of the interviews, after which the participants were asked to give their opinions on how the game could be improved
+
+### Discussion
+
+- **Time and Money**
+Participants understood the business simulation part and it established their sense of time and money inside the game world. When given a set of gift options, participants could understand their value, such as “this dress is too cheap, I can make this much money by selling three bottles of milk”
+
+- **Social relationship with NPC**
+The fairy version received better effect as aimed than the resident version. Participants found the fairy was “very cute” and “helpful”, and “I see a friendship between me and the fairy”; 
+They described the interaction as “engaging” and “interesting”. While some participants found Betty was “annoying”; they described the interaction as“interrupting”, some were going through the dialogues quickly without reading them. When the gifting event occurred, participants realised the fairy’s help and considered this in their decision to gift but were less able to recall the character in the resident version (e.g. “I don’t know who this Daniel/Betty is”).Fairy’s facial expressions and animations contributed to her popularity as well. Some participants said, “it would be nice to see the happiness level of the NPC”. We summarise that interacting with an NPC, whose emotions can be gauged by players, through cooperative events rather than conversations alone is more effective for building a close relationship with the NPC.
+
+- **Motivation** Some participants wanted to gift or to gift well but did not do so because they “did not make good money before that” or “it was still early in the game, I wanted to save some money for later use”. Those who chose to gift or gifted well had different motivations too. Some participants said they regarded the NPC and the gifting event as “part of the game mechanism” that “gifting well will help me progress in the game”. Some gifted because “the NPC helped me” and some gave gifts because they “cared about the character”. One participant said that the reason she chose a teddy bear was because “it’s like a friendship type”.
+
+- **Gifting process**The gifting process itself was well received by the participants. No one reported that the occurrence of the gifting event was out of place under either occasion. Those who noticed the NPC’s favourite colour during their conversations tended to choose the colour for the gift package. Most participants claimed that they were more conscious of making money after giving a gift to the NPC
+
+## Paper Review
+
+This paper explores gifting, which is a branch of an psychological aspect of game design which already existed in most games. 
+
+**Empathy**
+
+The ability to understand and share the feelings of another. The act of sacrificing to help others.
+
+Games can evoke empathy in us. They can make us desire to be kind. They can help us put ourself in the shoes of others.
+
+But they can also give us an easy way to tell ourselves that we are good people, that we always choose the good side, the light side, and always without making us do the work that being a good person actually requires.
+
+We all had a moment where a game asked us to save a planet, rescue a cat, help villagers slay a dangerous monster, and the game tell us that these are good acts, and we are good people for doing them. We are even often given a goodness stat (*reputation, affection points, etc*), so that we know just how good we were for helping out. The problem though, is that we really weren't.
+
+Empathetic acts fundamentally about doing something for someone other than yourself. but in so many games where you have your heroic moments. That moment is really about you, not about whomever you're helping.
+
+So many games are so focused on empowering the player that many times, acting good in a game  ends up being about that too. But in truth, helping somebody isn't really the goal. The reward for helping somebody is the goal. Maybe it's some bonus the game give you or the praise you receive from characters in the game.
+
+And even in the cases where games actually ask something of you to do the good thing. It's often negligible or something you'd want to do anyway. It's not actually a sacrifice. Helping them is easy and meaningless. You're not actually empathizing with a group you're helping because you never have to consider the cost to yourself.
+
+The question of 
+- Should I help these people ?
+- Can I afford to help these people ?
+
+Isn't something the game even makes you think about, half of the time, we're really only doing any of these good things because we figure it's what the game wants us to do, the plot and objectives.
+
+.
+.
+.
+
+.
+.
+
+. 
+
+
+For this, I want to give an example. My absolute favorite game of all times. At The Game Awards 2017, the game won the award for "Best Score/Music" and was nominated for "Best Narrative" and "Best Role-Playing Game".
+
+Nier Automata is an action role-playing game developed by PlatinumGames and published by Square Enix. The game was released for the PlayStation 4 and Microsoft Windows in early 2017.
+
+I don't think I'm able to explain the plot of the game, so I leave it to the experts to do so.
+
+[First few seconds of the game, 0:00 - 0.23](https://www.youtube.com/watch?v=4MU0yMgu3bQ)
+
+[An overall plot review, 3:02 - 7:15](https://youtu.be/_yfA94EpeqM?t=182Q)
+
+[Nier Automata True Ending, 34:34 - 39:48](https://youtu.be/63PzQIbTrM8?t=2074)
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+It cost you everything you've worked for in this game, the hundred of hours you've invested, all the items you found, all the levels you gained, all the side quest and parts of the story you never saw, you won't get a chance to finish them unless you start the game over.
+
+This is a real sacrifice, giving up something you love, giving up the story you created, the hours you put in to build in it. just so, some day, somebody you'll never meet will have an easier time. I chose to do it. Because I know what those other people will be going through, their frustation is something you can relate to, you know exactly what other people already gave up to help you. That is a powerful moment, a true empathetic moment.
+
+Because kindness in our world usually asks something of us, something that's hard to give. And it's a worthy thing for a game to remind us that we're not good for simply doing good things, when it costs us nothing. That sacrificing something is where true kindness happens. 
+
+>  [Source of most of the script](https://www.youtube.com/watch?v=rxC0iIdkO6o)
