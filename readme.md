@@ -84,7 +84,7 @@ This paper explores gifting, which is a branch of an psychological aspect of gam
 
 **Empathy**
 
-The ability to understand and share the feelings of another. The act of sacrificing to help others.
+The ability to understand and share the feelings of another.
 
 Games can evoke empathy in us. They can make us desire to be kind. They can help us put ourself in the shoes of others.
 
